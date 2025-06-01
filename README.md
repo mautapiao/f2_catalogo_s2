@@ -1,4 +1,4 @@
-# FULLSTACK II SEMANA 1 CATALOGO JUEGOS DE MESA
+# FULLSTACK II SEMANA 2 CATALOGO JUEGOS DE MESA
 
 <p align="center">
   <img src="images/logo_carioca.png" alt="Logo" width="250">
@@ -9,7 +9,7 @@
 </div>
 
 ## Descripción de la Actividad
-En esta primera semana realizarás la actividad individual formativa 1, denominada Desarrollando nuestra interfaz gráfica donde deberás entregar la interfaz gráfica desarrollada mediante el uso de HTML y CSS. El producto de esta actividad consiste en entregar todos los archivos desarrollados, compartir el repositorio y el tablero de Trello con tu Docente.    
+En esta segunda realizarás la actividad individual formativa 2, denominada "Adaptando nuestra interfaz", integrando el uso de responsividad con Bootstrap, la manipulaciñon del documento y validaciones con JavaScript.
 
 ## Objetivos
 
@@ -27,6 +27,8 @@ a.	Las características de la página web que deben crear son las siguientes:
 •	Los colores y posicionamiento de los elementos deben ser decididos por el equipo, pero deben integrar elementos avanzados de CSS como: incluir variables css, generar al menos 4 animaciones css y manipular el media query para adaptar la responsividad mediante css.
 
 b.	Todas las operaciones necesarias en esta actividad deben alojarse en el repositorio creado para el desarrollo de la página web.
+
+c.  Formulario de registro para futuros clientes.
 
 ## Nombre de la Tienda
 - Tienda Carioca, somos juegos de mesa
@@ -72,6 +74,7 @@ b.	Todas las operaciones necesarias en esta actividad deben alojarse en el repos
 - Logo Adobe
 - Visual Studio Code
 - Extenciones Live Preview Microsoft
+- Bootstrap 5.3
 
 ## Git y Trello
 - Los links relacionados se comparten en AVA
