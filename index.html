@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Carioca - Somos Juegos de Mesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- generalmenre uso DOMContentLoaded
+         pero en este ejemplo uso defer que 
+         se puede incluir al inicio o sin defer al final
+    -->
+    <script src="js/app.js" defer></script>
+    <script src="js/registro.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo_carioca.png" alt="logo tienda carioca" class="logo-img">
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <div class="container">
+
+            <div class="nav-categorias">
+
+                <button class="categoria-btn active" onclick="mostrarCategoria('estrategia',event)">⚔️
+                    Estrategia</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('familiares',event)">👨‍👩‍👧‍👦
+                    Familiares</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('party',event)">🎉 Party Games</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('cooperativos',event)">🤝 Cooperativos</button>
+                <button class="categoria-btn" onclick="mostrarCategoria('registro',event)">👤 Registro de
+                    Cliente</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Categoría Estrategia -->
+            <section id="estrategia" class="categoria-seccion active">
+                <h2 class="categoria-titulo">Juegos de Estrategia</h2>
+                <div class="juego-grid">
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/catan.png" alt="Catan game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Catan</h3>
+                            <p class="juego-descripcion">El clásico juego de construcción y comercio donde debes
+                                colonizar la isla de Catan.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$45.100</span>
+                                <span class="precio-original">$55.000</span>
+                                <span class="descuento-badge">-18%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/risk.png" alt="Risk game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Risk</h3>
+                            <p class="juego-descripcion">Conquista el mundo en este épico juego de estrategia militar y
+                                diplomacia.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$38.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/ride.png" alt="Ride game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Ticket to Ride</h3>
+                            <p class="juego-descripcion">Construye rutas ferroviarias a través de América del Norte en
+                                esta aventura sobre rieles.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$42.000</span>
+                                <span class="precio-original">$50.000</span>
+                                <span class="descuento-badge">-16%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/splendor.png" alt="Splenddor game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Splendor</h3>
+                            <p class="juego-descripcion">Conviértete en un próspero comerciante de gemas en el
+                                Renacimiento.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$35.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categoría Familiares -->
+            <section id="familiares" class="categoria-seccion">
+                <h2 class="categoria-titulo">Juegos Familiares</h2>
+                <div class="juego-grid">
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/monopoly.png" alt="Monopoly game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Monopoly</h3>
+                            <p class="juego-descripcion">El clásico juego de bienes raíces que ha unido familias por
+                                generaciones.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$28.000</span>
+                                <span class="precio-original">$35.000</span>
+                                <span class="descuento-badge">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/scrabble.png" alt="Scrabble game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Scrabble</h3>
+                            <p class="juego-descripcion">Forma palabras y desarrolla tu vocabulario en este juego
+                                educativo y divertido.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$32.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/clue.png" alt="Clue game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo"></h3>
+                            <p class="juego-descripcion">Resuelve el misterio del asesinato en esta emocionante aventura
+                                detectivesca.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$30.000</span>
+                                <span class="precio-original">$40.000</span>
+                                <span class="descuento-badge">-25%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/uno.png" alt="Uno game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">UNO</h3>
+                            <p class="juego-descripcion">El juego de cartas más popular del mundo, perfecto para toda la
+                                familia.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$15.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categoría Party Games -->
+            <section id="party" class="categoria-seccion">
+                <h2 class="categoria-titulo">Party Games</h2>
+                <div class="juego-grid">
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/taboo.png" alt="Taboo game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Taboo</h3>
+                            <p class="juego-descripcion">Haz que tu equipo adivine la palabra sin decir las palabras
+                                prohibidas.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$24.960</span>
+                                <span class="precio-original">$32.000</span>
+                                <span class="descuento-badge">-22%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/charades.png" alt="Charades game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Charades</h3>
+                            <p class="juego-descripcion">Actúa sin hablar y divierte a todos con tus mejores
+                                interpretaciones.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$20.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/exploding.png" alt="Exploding game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Exploding Kittens</h3>
+                            <p class="juego-descripcion">Un juego de cartas lleno de gatitos, explosiones y láser
+                                ocasional.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$22.120</span>
+                                <span class="precio-original">$28.000</span>
+                                <span class="descuento-badge">-21%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categoria Cooperativos -->
+            <section id="cooperativos" class="categoria-seccion">
+                <h2 class="categoria-titulo">Juegos Cooperativos</h2>
+                <div class="juego-grid">
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/pandemic.png" alt="Pandemic game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Pandemic</h3>
+                            <p class="juego-descripcion">Trabajen juntos para salvar al mundo de cuatro enfermedades
+                                mortales.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$48.000</span>
+                                <span class="precio-original">$60.000</span>
+                                <span class="descuento-badge">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/forbidden.png" alt="Forbidden game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Forbidden Island</h3>
+                            <p class="juego-descripcion">Exploren la isla misteriosa y recuperen los tesoros antes de
+                                que se hunda.</p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$35.000</span>
+                                <span class="sin-descuento">Sin descuento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="juego-card">
+                        <div class="juego-image"><img src="images/flashpoint.png" alt="Flashpoint game"></div>
+                        <div class="juego-info">
+                            <h3 class="juego-titulo">Flash Point</h3>
+                            <p class="juego-descripcion">Conviértanse en bomberos y salven vidas en edificios en llamas.
+                            </p>
+                            <div class="juego-precio">
+                                <span class="precio-actual">$40.050</span>
+                                <span class="precio-original">$45.000</span>
+                                <span class="descuento-badge">-11%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categoría Estrategia -->
+            <section id="registro" class="categoria-seccion">
+
+                <div class="container py-5">
+                      
+
+                    <div class="row justify-content-center">
+                          
+
+                        <div class="col-12 col-md-8 col-lg-6">
+                               
+                                <div id="alertSuccess" class="alert alert-success d-none" role="alert">
+                                    Formulario enviado con exito!
+                                </div>
+
+
+                            <div class="form-container p-4">
+                                <h2 class="text-center mb-4">Formulario de Registro</h2>
+
+                             
+                                <form id="registroForm" novalidate>
+                                    <div class="row">
+                                        <!-- Nombre Completo -->
+                                        <div class="col-12 mb-3">
+                                            <label for="nombreCompleto" class="form-label required">Nombre
+                                                Completo</label>
+                                            <input type="text" class="form-control" id="nombreCompleto" required>
+                                            <div class="invalid-feedback">
+                                                Por favor ingrese su nombre completo.
+                                            </div>
+                                        </div>
+
+                                        <!-- Nombre de Usuario -->
+                                        <div class="col-12  mb-3">
+                                            <label for="nombreUsuario" class="form-label required">Nombre de
+                                                Usuario</label>
+                                            <input type="text" class="form-control" id="nombreUsuario" required>
+                                            <div class="invalid-feedback">
+                                                Por favor ingrese un nombre de usuario.
+                                            </div>
+                                        </div>
+
+                                        <!-- Correo -->
+                                        <div class="col-12  mb-3">
+                                            <label for="correo" class="form-label required">Correo Electrónico</label>
+                                            <input type="email" class="form-control" id="correo" required
+                                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                            title="Por favor ingrese un correo válido (ejemplo: usuario@dominio.com)"
+                                            >
+                                            <div class="invalid-feedback">
+                                                Por favor ingrese un correo electrónico válido.
+                                            </div>
+                                        </div>
+
+                                        <!-- Fecha de Nacimiento -->
+                                        <div class="col-12  mb-3">
+                                            <label for="fechaNacimiento" class="form-label required">Fecha de
+                                                Nacimiento</label>
+                                            <input type="date" class="form-control" id="fechaNacimiento" required>
+                                            <div class="invalid-feedback">
+                                                Debe ser mayor de 13 años.
+                                            </div>
+                                        </div>
+
+                                        <!-- Dirección de Despacho (Opcional) -->
+                                        <div class="col-12 mb-3">
+                                            <label for="direccionDespacho" class="form-label">Dirección de
+                                                Despacho</label>
+                                            <input type="text" class="form-control" id="direccionDespacho"
+                                                placeholder="Opcional">
+                                        </div>
+
+                                        <!-- Contraseña -->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="contrasena" class="form-label required">Contraseña</label>
+                                            <input type="password" class="form-control" id="contrasena" required>
+                                            <div class="form-text">
+                                                Entre 6-18 caracteres, al menos 1 número y 1 mayúscula.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                La contraseña debe tener entre 6-18 caracteres, al menos un número y una
+                                                letra mayúscula.
+                                            </div>
+                                        </div>
+
+                                        <!-- Confirmar Contraseña -->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="confirmarContrasena" class="form-label required">Confirmar
+                                                Contraseña</label>
+                                            <input type="password" class="form-control" id="confirmarContrasena"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Las contraseñas no coinciden.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botones -->
+                                    <div class="row mt-4">
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <button type="button" class="btn btn-secondary btn-custom w-100"
+                                                id="btnLimpiar">
+                                                Limpiar
+                                            </button>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <button type="submit" class="categoria-btn btn-custom w-100"
+                                                id="btnEnviar">
+                                                Enviar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="anio-actual"></span> Tienda Carioca - Somos Juegos de Mesa. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
